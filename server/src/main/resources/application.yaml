@@ -16,5 +16,5 @@ logging:
 
 traiana:
   grpc:
-    port: 5050
-    ops-port: 5060
+    port: 5080
+    ops-port: 5090

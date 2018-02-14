@@ -6,6 +6,8 @@ buildscript {
   repositories {
     mavenLocal()
     mavenCentral()
+    maven { url 'http://artifactory-dev.traiana.com/artifactory/libs-release' }
+    maven { url 'http://artifactory-dev.traiana.com/artifactory/libs-snapshot' }
   }
 }
 
@@ -18,6 +20,8 @@ project.configure(children) { proj ->
     repositories {
       mavenLocal()
       mavenCentral()
+      maven { url 'http://artifactory-dev.traiana.com/artifactory/libs-release' }
+      maven { url 'http://artifactory-dev.traiana.com/artifactory/libs-snapshot' }
     }
   }
 
@@ -60,6 +64,8 @@ project.configure(children) { proj ->
   repositories {
     mavenLocal()
     mavenCentral()
+    maven { url 'http://artifactory-dev.traiana.com/artifactory/libs-release' }
+    maven { url 'http://artifactory-dev.traiana.com/artifactory/libs-snapshot' }
   }
 
   proj.afterEvaluate {
